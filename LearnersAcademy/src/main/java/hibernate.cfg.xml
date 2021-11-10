@@ -10,6 +10,11 @@
 		<property name="connection.url">jdbc:mysql://localhost:3306/test</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">Admin</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.id.new_generator_mappings">false</property>
+		
 		<mapping class="com.LearnersAcademy.entity.Student" />
 	</session-factory>
 </hibernate-configuration>

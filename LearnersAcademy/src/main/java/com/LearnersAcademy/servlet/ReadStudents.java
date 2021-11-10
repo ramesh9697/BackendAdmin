@@ -35,11 +35,11 @@ public class ReadStudents extends HttpServlet {
 
 			// using HQL
 			List<Student> StudentList = session.createQuery("select _s from Student _s").getResultList();
-			session.close();
+			
 
 			PrintWriter out = response.getWriter();
 			out.println("<html><body>");
-			out.println("<b>Product Listing</b><br>");
+			out.println("<b>Student Listing</b><br>");
 
 			for (Student s: StudentList) {
 				out.println("ID: " + String.valueOf(s.getStudentid()) + ", Name: " + s.getStudentName()
