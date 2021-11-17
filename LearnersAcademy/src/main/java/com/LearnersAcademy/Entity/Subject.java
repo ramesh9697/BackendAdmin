@@ -1,9 +1,7 @@
 package com.LearnersAcademy.Entity;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.util.List;
+
+import javax.persistence.*; 
 
 @Entity
 @Table(name = "Subject")
@@ -15,10 +13,19 @@ public class Subject {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int Subjectid;
 	private String SubjectName;
+	
+	
+	
+
+	
 	public Subject()
 	{
 		
 	}
+	
+	
+
+	
 	public int getSubjectid() {
 		return Subjectid;
 	}
@@ -32,5 +39,11 @@ public class Subject {
 	public void setSubjectName(String subjectName) {
 		SubjectName = subjectName;
 	}
+
+
+
+
+	
+	
 	
 }

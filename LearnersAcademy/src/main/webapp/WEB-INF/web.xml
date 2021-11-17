@@ -16,6 +16,25 @@
   	<description></description>
   	<servlet-class>com.LearnersAcademy.servlet.ReadStudents</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ReadTeachers</servlet-name>
+  	<display-name>ReadTeachers</display-name>
+  	<description></description>
+  	<servlet-class>com.LearnersAcademy.servlet.ReadTeachers</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReadSubjects</servlet-name>
+  	<display-name>ReadSubjects</display-name>
+  	<description></description>
+  	<servlet-class>com.LearnersAcademy.servlet.ReadSubjects</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReadClasses</servlet-name>
+  	<display-name>ReadClasses</display-name>
+  	<description></description>
+  	<servlet-class>com.LearnersAcademy.servlet.ReadClasses</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
   	<servlet-name>AdminLogin</servlet-name>
   	<url-pattern>/AdminLogin</url-pattern>
@@ -24,4 +43,18 @@
   	<servlet-name>ReadStudents</servlet-name>
   	<url-pattern>/Students</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReadTeachers</servlet-name>
+  	<url-pattern>/Teachers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReadSubjects</servlet-name>
+  	<url-pattern>/Subjects</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReadClasses</servlet-name>
+  	<url-pattern>/Classes</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

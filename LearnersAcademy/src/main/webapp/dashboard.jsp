@@ -14,28 +14,18 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<%
-		String usernameSession = (String) session.getAttribute("username");
-		if (session.getAttribute("username") == null) {
-			response.sendRedirect("invalid.jsp?error=1");
-		}
-		String students=request.getParameter("Students");
-		if (students==null||"".equals("Students")){
-			out.println("nothing");
-		}else{
-			out.println("info is"+students);
-		}
-	%>
-	<a href="Students">
-	<button class="btn-btn-primary">view students</button>
-	</a>
+	
+
+
+	
 	<div class="container mt-3">
 		<h2>Welcome to Learners Academy</h2>
 		  <a href="logout.jsp"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
 		  <a href="Students"> <button class="btn btn-primary">View Students</button></a>
-		  <a href="teachers"> <button class="btn btn-primary">View Teachers</button></a>
-		  <a href="subjects"> <button class="btn btn-primary">View Subjects</button></a>
-		  <a href="classes"> <button class="btn btn-primary">View Classses</button></a>
+		  <a href="Teachers"> <button class="btn btn-primary">View Teachers</button></a>
+		  <a href="Subjects"> <button class="btn btn-primary">View Subjects</button></a>
+		  <a href="Classes"> <button class="btn btn-primary">View Classes</button></a>
+		  <a href="SubjectClasses"> <button class="btn btn-primary">View SubjectClasses</button></a>
 		
 				
 		

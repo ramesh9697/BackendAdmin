@@ -4,6 +4,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.List;
+import java.util.Set;
+import javax.persistence.*;
+
+import org.hibernate.annotations.ManyToAny;
+
 
 @Entity
 @Table(name = "Student")
@@ -13,8 +19,19 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int Studentid;
 	private String StudentName;
+	
+	  
+   
+	
 	public Student()
 	{
+		
+	}
+	public Student(String StudentName)
+	{
+		super();
+		this.StudentName=StudentName;
+		
 		
 	}
 	public int getStudentid() {
@@ -29,6 +46,9 @@ public class Student {
 	public void setStudentName(String studentName) {
 		StudentName = studentName;
 	}
+	
+	
+	
 	
 	
 	
