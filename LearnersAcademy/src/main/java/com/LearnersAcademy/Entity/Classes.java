@@ -21,7 +21,8 @@ public class Classes {
 	private int Classid;
 	private String ClassName;
 	
-	
+	@OneToMany(mappedBy="Classes", cascade = CascadeType.ALL)
+	List<Subject> subject;
 
 	
 	public Classes()
